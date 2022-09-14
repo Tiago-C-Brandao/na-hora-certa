@@ -7,11 +7,11 @@
         class="logo"
       />
       <form class="login">
-        <h1>Login</h1>
-        <label>User name</label>
+        <label>Username</label>
         <input type="text">
         <label>Password</label>
         <input type="text">
+        <a href="">Esqueceu a senha?</a>
         <button>LOGIN</button>
     </form>
     </div>
@@ -25,6 +25,7 @@
     }
     body {
         background: #10264B;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     .container {
         position: absolute;
@@ -35,28 +36,42 @@
     }
     .logo {
         position: relative;
-        display: flex;
-        top: 20%;
+        top: 10%;
         left: 35%;
         border-radius: 50%;
     }
     .login {
         position: relative;
-        top: 25%;
+        margin-top: 25%;
+        margin-left: 16%;
+        color: #10264B;
+        font-size: 23px;
     }
     .login input {
         display: block;
-        height: 45px;
-        width: 300px;
-        border-radius: 10px;
+        height: 55px;
+        width: 400px;
+        border-radius: 15px;
         border: none;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+    .login a {
+      position: relative;
+      text-decoration: none;
+      color: #10264B;
+      margin-left: 190px;
+      top: -15px;
     }
     .login button {
-      display: block;
-        height: 45px;
-        width: 300px;
-        border-radius: 10px;
+        display: block;
+        height: 55px;
+        width: 400px;
+        border-radius: 15px;
         border: none; 
-        top: 20px ;
+        margin-top: 20px ;
+        margin-bottom: 100px;
+        cursor: pointer;
     }
 </style>
