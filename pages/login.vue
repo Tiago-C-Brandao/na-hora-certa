@@ -8,70 +8,73 @@
       />
       <form class="login">
         <label>Username</label>
-        <input type="text">
+        <input class="input-form" type="text" />
         <label>Password</label>
-        <input type="text">
-        <a href="">Esqueceu a senha?</a>
-        <button>LOGIN</button>
-    </form>
+        <input class="input-form" type="text" />
+        <a class="forget" href="">Esqueceu a senha?</a>
+        <button class="btn-send-form">LOGIN</button>
+      </form>
     </div>
   </body>
 </template>
 
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    body {
-        background: #10264B;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    .container {
-        position: absolute;
-        background: #6EAACC;
-        width: 30%;
-        height: 100%;
-        left: 70%;
-    }
-    .logo {
-        position: relative;
-        top: 10%;
-        left: 35%;
-        border-radius: 50%;
-    }
-    .login {
-        position: relative;
-        margin-top: 25%;
-        margin-left: 16%;
-        color: #10264B;
-        font-size: 23px;
-    }
-    .login input {
-        display: block;
-        height: 55px;
-        width: 400px;
-        border-radius: 15px;
-        border: none;
-        margin-top: 10px;
-        margin-bottom: 25px;
-        font-size: 20px;
-    }
-    .login a {
-      position: relative;
-      text-decoration: none;
-      color: #10264B;
-      margin-left: 190px;
-      top: -15px;
-    }
-    .login button {
-        display: block;
-        height: 55px;
-        width: 400px;
-        border-radius: 15px;
-        border: none; 
-        margin-top: 20px ;
-        margin-bottom: 100px;
-        cursor: pointer;
-    }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background: #114B5F;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .container {
+    position: absolute;
+    background: #028090;
+    width: 30%;
+    height: 100%;
+    left: 70%;
+  }
+  .logo {
+    position: relative;
+    top: 10%;
+    left: 35%;
+    border-radius: 50%;
+  }
+  .login {
+    position: relative;
+    margin-top: 25%;
+    margin-left: 16%;
+    color: #114B5F;
+    font-size: 23px;
+  }
+  .input-form {
+    display: block;
+    height: 55px;
+    width: 400px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  .forget {
+    position: relative;
+    text-decoration: none;
+    color: #114B5F;
+    margin-left: 190px;
+    top: -15px;
+  }
+  .btn-send-form {
+    display: block;
+    height: 55px;
+    width: 400px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    cursor: pointer;
+    background: #114B5F;
+    color: #fff;
+    font-size: large;
+  }
 </style>
