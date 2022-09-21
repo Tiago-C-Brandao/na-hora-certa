@@ -8,11 +8,12 @@
       />
       <div class="login">
         <label>Username</label>
-        <input class="input-form" v-model="login.username" type="text" />
+        <input class="input-form" v-model="users.username" type="text" />
         <label>Password</label>
-        <input class="input-form" v-model="password" type="text" />
+        <input class="input-form" v-model="users.password" type="text" />
         <a class="forget" href="">Esqueceu a senha?</a>
         <button class="btn-send-form" @click="handleForm()">LOGIN</button>
+        <a class="new-account" href="/newAccount">Não tem conta? Cadastre-se aqui</a>
       </div>
     </div>
   </div>
@@ -22,18 +23,18 @@
 export default {
   data() {
     return {
-      login: {
+      users: {
         username: '',
         password: '',
-      },
+      }
     }
   },
 
   methods: {
-    handleForm(){
-      console.log(this.login.username)
+    handleForm() {
+      console.log('Username: ' + this.users.username + '\nPassword: ' + this.users.password)
     }
-  }
+  },
 }
 </script>
 
@@ -95,5 +96,12 @@ body {
   background: #114b5f;
   color: #fff;
   font-size: large;
+}
+.new-account {
+  display: flex;
+  text-decoration: none;
+  color: #114b5f;
+  margin-left: 30px;
+
 }
 </style>
